@@ -12,6 +12,7 @@ import android.widget.Button;
 
 /*
 사이드바 네비게이션메뉴 만들기 예제
+code의 터치리스너는 상관x
 
  */
 public class MainActivity extends AppCompatActivity {
@@ -44,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         drawerLayout.setDrawerListener(listener); // 네이비게이션 메뉴 이벤트 메서드
-        drawView.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                return true;
-            }
-        });
+//        drawView.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View view, MotionEvent motionEvent) {
+//                return true;
+//            }
+//        });
 
 
     }
